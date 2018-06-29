@@ -1,0 +1,107 @@
+
+
+/* index------------------------------- */
+
+#about,#works{
+    background-color: $bg-2;
+}
+
+
+#skill{
+    background-color: $bg-1;
+}
+
+
+#about{
+    .about-text h3 span{
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    h3{
+        margin-bottom: 10px;
+    }
+
+    .about-pic img{
+        width: 250px;
+        height: 250px;
+        border-radius: 99em;
+        border: solid 1px $dark-gray;
+    }
+}
+
+
+
+
+// skill
+
+.skill-content{
+    width: 65%;
+    margin: 0 auto;
+    .skill-list {
+        margin-bottom: 15px;
+    }
+    .skill-list h3 span{    
+        font-size: 14px;
+        font-style: italic;
+        color: $font-ita;
+    }
+}
+
+.progress {
+    width: 100%;
+    height: 25px;
+  }
+  .progress-wrap {
+    margin: 0px auto 5px;
+    overflow: hidden;
+    // background: #FFDC4F;
+    background: $blue;
+    
+    position: relative;
+    .progress-bar {
+      background: #EFF2F4;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+
+/* work */
+.work-card{
+    margin-bottom: 30px;
+}
+
+.work-list-img{
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: 0 10px;
+    transition: all 0.3s;
+}
+
+.work-list-img:hover{
+    opacity: 0.8;
+}
+
+.work-card p{
+    color: #58798c;
+    font-size: 16px;
+    margin: 5px 0 7px;
+}
+
+.work-use{
+    padding: 0 8px;
+    height: 50px;
+}
+
+.work-use .tag{
+    color: #58798c;
+    padding: 4px;
+    font-size: 14px;
+    font-style:italic;
+}
+
+/* index END ------------------------------- */
+
+
+

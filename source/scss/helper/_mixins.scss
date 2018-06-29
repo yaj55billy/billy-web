@@ -1,0 +1,197 @@
+
+//  ----Variables 
+
+
+// font-size
+$font-base: 15px;
+$font-h2: 32px;
+$font-h3: 24px;
+
+// color
+
+$bg-1: #f8f8f8;
+$bg-2: white;
+$black: #383838;
+$banner: #6d7a83;
+$dark-gray: #282D30;
+$dark-light: #c9ced1;
+$font-ita: #58798c;
+$blue: #71cfe9;
+$yellow: #ffd529;
+$red: #f37374;
+
+//  ----Variables END 
+
+
+// Mixins
+
+//排版平均分配
+           //  欄位數量    ,   欄位間距
+@mixin grid-equally($col-num,$col_gutter) {
+        //總寬度 -    欄位間距  *    (欄位數量-1)      /   欄位數量
+    width: ($width - $col_gutter*($col-num - 1) ) / $col-num;
+    margin-right: $col_gutter;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    float: left;
+                //   欄位數量
+    &:nth-child(#{$col-num}n){
+        margin-right: 0;
+    }
+}
+//排版平均分配 END
+
+//排版比例分配 50% 50% 
+@mixin grid-ratio-50($margin-left,$margin-right) {
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+    width: (100% - $margin-left - $margin-right) /2 ;
+    float: left;
+}
+
+
+//排版比例分配 END
+
+
+
+
+
+
+@mixin transition($transition){
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($property){
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}
+
+@mixin box-shadow($property){
+    box-shadow: $property;
+    -moz-box-shadow: $property;
+    -webkit-box-shadow: $property;
+}
+
+@mixin border-radius($property){
+    border-radius: $property;
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+}
+
+@mixin box-sizing-default(){
+    box-sizing: border-box;
+    -webkit-sizing: border-box;
+    -moz-sizing: border-box;
+}
+
+@mixin centerVH(){
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include transform(translateY(-50%));
+}
+
+
+@mixin clearfix() {
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+}
+
+@mixin bg-img-default($width,$height){
+    width: $width;
+    height: $height;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: 因有時候會寫在HTML 所以這邊不做定義
+}
+
+@mixin html-default(){
+    width: 100%;
+    line-height: 1.7;
+    word-wrap: break-word;
+    word-break: normal;
+    img{
+        height: auto !important;
+    }
+    iframe{
+        height: auto !important
+    }
+};
+
+
+
+
+
+
+
+// rwd
+@mixin desk(){
+    @media (min-width:1200px) {
+        @content
+    }
+};
+
+@mixin l-pad(){
+    @media (min-width:992px) {
+        @content
+    }
+};
+
+@mixin s-pad(){
+    @media (min-width:768px) {
+        @content
+    }
+};
+
+@mixin phone(){
+    @media (min-width:500px) {
+        @content
+    }
+};
+// rwd END
+
+
+
+
+// case
+@mixin btn($color-bg){
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: $color-bg;
+    border-radius: 4px;
+    cursor: pointer;
+    @include transition(all 0.3s);
+
+    &:hover,&.active{
+        background-color: lighten($color-bg, 10%);
+    }
+}
+
+
+
+
+
+
+
+
+
+// Mixins END 
+
+
