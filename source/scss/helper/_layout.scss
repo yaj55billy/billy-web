@@ -9,6 +9,8 @@
 
 ul,ol,li{
     list-style-type:none;
+    padding: 0;
+    margin: 0;
 }    
 
 .clearfix{
@@ -92,12 +94,17 @@ h3{
 h4{
     font-size: 18px;
     font-weight: bolder;
-    // color: $color-58798c;
+    color: $black;
+    margin: 10px 0 5px;
 }
 
 p{
     font-size: $font-base;
 }
+
+
+
+
 
     /* header------------------------------- */
 header{
@@ -206,19 +213,52 @@ header{
     /* footer ------------------------------- */
 
 #contact{
-    background-color: $banner;
+    background-color: $bg-1;
     padding: 40px 0;
-    text-align: center;
-    .contact-info{
-        // text-align: center;
-    }
+    // text-align: center;
+}
 
+.footer-content{
+    width: 65%;
+    margin: 0 auto;
+    .contact-logo {
+        text-align: center;
+    }
+    .contact-logo a{
+        color: $black;
+    }
     .contact-link{
-        // text-align: center;
+        text-align: center;
+    }
+    .contact-link li{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        margin: 2px 5px;
+        a{
+            color: $black;
+            transition: all 0.3s;
+            &:hover{
+                color: $blue;
+            }
+        }
     }
 
-    .contact-logo{
-
+    .contact-info li{
+        margin-bottom: 5px;
+        a{
+            color: $black;
+            transition: all 0.3s;
+            &:hover{
+                color: $blue;
+            }
+        }
+        .fas{
+            margin-right: 5px;
+        }
+    }
+    .contact-info li:nth-child(1) .fas{
+        margin-left: 3px;
     }
 }
 

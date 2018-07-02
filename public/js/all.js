@@ -26,7 +26,23 @@ var wow = new WOW({
 wow.init();
 // --------------wow END
 
-moveProgressBar();
+
+var timer;
+
+$(window).scroll(function () {
+
+    window.clearTimeout(timer);
+    timer = window.setTimeout(function () {
+        console.log('scroll event'); //callback your coding
+        var skillH = $("#skill").offset().top;
+        var windowH = $(window).scrollTop();
+        console.log(skillH);
+        console.log(windowH);
+        if (windowH > skillH - 50) {
+            moveProgressBar();
+        }
+    }, 100);
+});
 
 $(window).resize(function () {
     moveProgressBar();
@@ -47,6 +63,19 @@ function moveProgressBar() {
         }, animationLength);
     });
 }
+
+$('.tab-header .tab-btn').each(function () {
+    $(this).click(function () {
+
+        var id = $(this).attr('id');
+        console.log(id);
+        $('.tab-header .tab-btn').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tab-content').fadeOut(800);
+        $('.tab-content#' + id).delay(800).css('display', 'flex').fadeIn(800);
+    });
+});
 'use strict';
 
 var nw2 = function newFunction() {

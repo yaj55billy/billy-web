@@ -58,7 +58,7 @@
 				</h2>
 			</a>
 
-			<div class="greet-bg">
+			<div class="greet-bg wow fadeIn" data-wow-duration="2s">
 				<!-- <div class="greet-bg-icon">
 					<i class="fab fa-html5"></i>
 					<i class="fab fa-css3"></i>
@@ -102,7 +102,7 @@
 	<div class="main">
 
 		<section class="section" id="about">
-			<div class="container wow fadeIn" data-wow-duration="2s">
+			<div class="container wow fadeInUp" data-wow-duration="2s">
 				<h2 class="title">About me</h2>
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
@@ -127,55 +127,55 @@
 		</section>
 
 		<section class="section" id="skill">
-			<div class="container wow fadeIn" data-wow-duration="2s" >
+			<div class="container wow fadeInUp" data-wow-duration="2s" >
 				<h2 class="title">skill</h2>
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
 						<ul class="skill-content">
 							<li class="skill-list">
-								<h3>HTML、CSS <span>熟悉HTML、CSS語法，已有純手刻過10個以上專案</span></h3>
+								<h3>HTML、CSS <span>熟悉HTML、CSS語法，已有純手刻過10個以上專案。(詳下方參與專案)</span></h3>
 								<div class="progress-wrap progress" data-progress-percent="90">
 									<div class="progress-bar progress"></div>
 								</div>
 							</li>
 							<li class="skill-list">
-								<h3>SASS、SCSS <span>對於Variables、Nesting、Import、Mixins、Extend有基礎掌握並能用在專案規劃上。</span></h3>
+								<h3>SASS、SCSS <span>對於Variables、Nesting、Import、Mixins有基礎掌握並能用在開發上。<a href="https://yaj55billy.github.io/product-gallery/public/" target='_blank'>F2E活動第四週</a></span></h3>
 								<div class="progress-wrap progress" data-progress-percent="50">
 									<div class="progress-bar progress"></div>
 								</div>
 							</li>
 							<li class="skill-list">
-								<h3>jQuery <span>熟悉jQuery語法，P...</span></h3> 
+								<h3>jQuery <span>熟悉選擇器，與CSS搭配做出動態效果。<a href="http://www.g-insurance.com.tw/about.php#about_se2" target='_blank'>精聯保險經紀人(tab)</a></span></h3> 
 								<div class="progress-wrap progress" data-progress-percent="80">
 									<div class="progress-bar progress"></div>
 								</div>
 							</li>
 							<li class="skill-list">
-								<h3>JavaScript <span>有基礎掌握跟使用，可至下方個人作品部分</span></h3>
+								<h3>JavaScript <span>對於變數、迴圈、函式、DOM的操作以及Ajax有基礎的了解，並能應用在開發上。<a href="https://yaj55billy.github.io/travel-info/" target='_blank'>高雄旅遊資訊(作品)</a></span></h3>
 								<div class="progress-wrap progress" data-progress-percent="70">
 									<div class="progress-bar progress"></div>
 								</div>
 							</li>
 							<li class="skill-list">
-								<h3>Bootstrap <span>了解Bootstrap系統(3版、4版都有接觸)，能做基礎運用，並適時導入專案加快開發效率</span></h3>
+								<h3>Bootstrap <span>了解Bootstrap系統(3版、4版都有接觸)，能適時導入專案加快開發效率 <a href="http://www.vinegarhouse.com.tw/index.php" target='_blank'>醋醰媒體工作室</a></span></h3>
 								<div class="progress-wrap progress" data-progress-percent="65">
 									<div class="progress-bar progress"></div>
 								</div>
 							</li>
 							<li class="skill-list">
-								<h3>Gulp <span>使用Gulp自動化編譯、壓縮檔案，解決瀏覽器相容問題。</span></h3>
+								<h3>Gulp <span>使用Gulp自動化編譯、壓縮檔案，增進開發效率、解決瀏覽器相容問題。<a href="https://github.com/yaj55billy/build" target='_blank'>連結</a></span></h3>
 								<div class="progress-wrap progress" data-progress-percent="75">
 									<div class="progress-bar progress"></div>
 								</div>
 							</li>
 							<li class="skill-list">
-								<h3>Git <span>基礎使用。</span></h3>
+								<h3>Git <span>Git基礎使用、將專案push到Github，了解分支跟衝突。</span></h3>
 								<div class="progress-wrap progress" data-progress-percent="60">
 									<div class="progress-bar progress"></div>
 								</div>
 							</li>
 							<li class="skill-list">
-								<h3>Other <span>有處理過跨瀏覽器問題，也有跟團隊合作經驗。</span></h3>
+								<h3>Other <span> 一些些的跨瀏覽器的經驗 + 團隊合作經驗 + 不斷學習的心</span></h3>
 								<div class="progress-wrap progress" data-progress-percent="60">
 									<div class="progress-bar progress"></div>
 								</div>
@@ -187,157 +187,233 @@
 		</section>
 
 		<section class="section" id="work">
-			<div class="container wow fadeIn" data-wow-duration="2s">
+			<div class="container wow fadeInUp" data-wow-duration="2s">
 				<h2 class="title">My works</h2>
 
-				<div class="row">
+				<ul class="tab-header">
+					<li class="tab-btn active" id="case">
+						參與專案
+					</li>
+					<li class="tab-btn" id="privately">
+						個人作品
+					</li>
+				</ul>
 
-					<ul class="tab-header">
-						<li class="tab-btn">
-							參與專案(前端)
-						</li>
-						<li class="tab-btn">
-							個人作品
-						</li>
-					</ul>
+				<ul class="row tab-content" id="case">
 
-					<ul class="row tab-content">
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.geos.com.tw/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_02.png" alt="網站作品">
+							</div>
+						</a>
+						<h4>GEOS 大世界英日韓&遊學</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">
+								HTML、CSS、jQuery、RWD、Bootstrap、Google Map API、Plugin
+							</span>
+						</div>
+					</li>
+					
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.saliya.com.tw/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_03.png" alt="網站作品">
+							</div>
+						</a>
+						<h4>義大利餐廳薩莉亞</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、jQuery、RWD、Plugin</span>
+						</div>
+					</li>
 
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.geos.com.tw/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_02.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>GEOS 大世界英日韓&遊學</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">
-									HTML、CSS、jQuery、RWD、Bootstrap、Google Map API、Plugin
-								</span>
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.g-insurance.com.tw/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_07.png" alt="網站作品">
 							</div>
-						</li>
-						
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.saliya.com.tw/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_03.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>義大利餐廳薩莉亞</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS、jQuery、RWD、Plugin</span>
-							</div>
-						</li>
+						</a>
+						<h4>精联保險經紀人</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、jQuery、RWD、Plugin、Browser support</span>
+						</div>
+					</li>
 
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.g-insurance.com.tw/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_07.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>精联保險經紀人</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS、jQuery、RWD、Plugin、Browser support</span>
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.vinegarhouse.com.tw/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_04.png" alt="網站作品">
 							</div>
-						</li>
+						</a>
+						<h4>醋醰媒體工作室</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、jQuery、RWD、Bootstrap、Plugin</span>
+						</div>
+					</li>
 
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.vinegarhouse.com.tw/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_04.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>醋醰媒體工作室</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS、jQuery、RWD、Bootstrap、Plugin</span>
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.acorntour.com/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_09.png" alt="網站作品">
 							</div>
-						</li>
+						</a>
+						<h4>橡實旅行社(協助製作)</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、RWD、JavaScript</span>
+						</div>
+					</li>
 
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.acorntour.com/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_09.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>橡實旅行社(協助製作)</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS、RWD、JavaScript</span>
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.tourtbus.com/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_05.png" alt="網站作品">
 							</div>
-						</li>
+						</a>
+						<h4>享樂台灣租車</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、jQuery、RWD、Bootstrap、Plugin、Gulp</span>
+						</div>
+					</li>
 
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.tourtbus.com/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_05.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>享樂台灣租車</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS、jQuery、RWD、Bootstrap、Plugin、Gulp</span>
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.forestwebsdemo.com.tw/arluis_wedding/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_10.png" alt="網站作品">
 							</div>
-						</li>
+						</a>
+						<h4>艾洛詩海外婚禮(未上正式站)</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、jQuery、RWD、Plugin</span>
+						</div>
+					</li>
 
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.forestwebsdemo.com.tw/arluis_wedding/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_10.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>艾洛詩海外婚禮(未上正式站)</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS、jQuery、RWD、Plugin</span>
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://yuli-design.com/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_08.png" alt="網站作品">
 							</div>
-						</li>
+						</a>
+						<h4>由里室內設計</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、jQuery、RWD、Bootstrap、Plugin</span>
+						</div>
+					</li>
 
-						<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://yuli-design.com/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_08.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>由里室內設計</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS、jQuery、RWD、Bootstrap、Plugin</span>
+					<!-- 高豐速度很慢，暫時不放 -->
+					<!-- <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.gofunsports.com/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_01.png" alt="網站作品">
 							</div>
-						</li>
+						</a>
+						<h4>高豐運動網有限公司</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS</span>
+						</div>
+					</li> -->
+					
+					<!-- 考慮 -->
+					<!-- <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="http://www.atyilan.tw/index.php" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_06.png" alt="網站作品">
+							</div>
+						</a>
+						<h4>在宜蘭公益平台</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS</span>
+						</div>
+					</li> -->
+				</ul>
 
-						<!-- 高豐速度很慢，暫時不放 -->
-						<!-- <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.gofunsports.com/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_01.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>高豐運動網有限公司</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS</span>
+				<ul class="row tab-content" id="privately">
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="https://yaj55billy.github.io/bmi-calculator/" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_bmi.png" alt="網站作品">
 							</div>
-						</li> -->
-						
-						<!-- 考慮 -->
-						<!-- <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
-							<a href="http://www.atyilan.tw/index.php" target="_blank">
-								<div class="work-list-img">
-									<img src="images/work_06.png" alt="網站作品">
-								</div>
-							</a>
-							<h4>在宜蘭公益平台</h4>
-							<div class="work-use">
-								<i class="fa fa-tags" aria-hidden="true"></i>
-								<span class="tag">HTML、CSS</span>
+						</a>
+						<h4>BMI計算器</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、RWD、JavaScript</span>
+						</div>
+					</li>
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="https://yaj55billy.github.io/travel-info/" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_kao.png" alt="網站作品">
 							</div>
-						</li> -->
-					</ul>
-				</div>
+						</a>
+						<h4>高雄旅遊資訊</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、RWD、JavaScript</span>
+						</div>
+					</li>
+
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="https://yaj55billy.github.io/todo_list/" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_todolist.png" alt="網站作品">
+							</div>
+						</a>
+						<h4>F2E活動第一週-To do list</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、JavaScript</span>
+						</div>
+					</li>
+
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="https://yaj55billy.github.io/week2-filter/" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_filter.png" alt="網站作品">
+							</div>
+						</a>
+						<h4>F2E活動第二週-Filter</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、CSS、RWD、JavaScript</span>
+						</div>
+					</li>
+
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="https://yaj55billy.github.io/admin-order/" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work_admin.png" alt="網站作品">
+							</div>
+						</a>
+						<h4>F2E活動第三週-後台介面</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、SCSS</span>
+						</div>
+					</li>
+
+					<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 work-card">
+						<a href="https://yaj55billy.github.io/product-gallery/public/" target="_blank">
+							<div class="work-list-img">
+								<img src="images/work-gallery.png" alt="網站作品">
+							</div>
+						</a>
+						<h4>F2E活動第四週-Product Gallery</h4>
+						<div class="work-use">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<span class="tag">HTML、SCSS、RWD</span>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 
@@ -347,41 +423,49 @@
 	<footer id="contact">
 		<div class="container">
 			<h2 class="title">Contact</h2>
+			<div class="footer-content">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
+						<h2 class="contact-logo">
+							<a href="index.html">
+								Billy's web
+							</a>
+						</h2>
 
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
-					<!-- 個人介紹 聯繫方式 -->
-					<!-- footer-info -->
-					<ul class="contact-info">
-						<li>
-							<i class="fas fa-map-marker-alt"></i>
-							Sanchong Dist,Taipei City, Taiwan
-						</li>
-						<li>
-							<i class="fas fa-envelope"></i>
-							yaj55ushydna@gmail.com
-						</li>
-						<li>
-							<i class="fas fa-phone"></i>
-							0975977286
-						</li>
-					</ul>
-					<!-- 相關連結 -->
-					<ul class="contact-link">
-						<li><i class="fab fa-facebook-f"></i></li>
-						<li><i class="fab fa-instagram"></i></li>
-						<li><i class="fab fa-medium-m"></i></li>
-					</ul>
-					<h2 class="contact-logo">
-						<a href="index.html">
-							Billy's web
-						</a>
-					</h2>
+						<!-- 相關連結 -->
+						<ul class="contact-link">
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-github"></i></a></li>
+							<li><a href="#"><i class="fab fa-medium-m"></i></a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
+						<!-- 聯繫方式 -->
+						<ul class="contact-info">
+							<li>
+								<a href="https://goo.gl/maps/R9BSE1KoYyF2" target="_blank">
+									<i class="fas fa-map-marker-alt"></i>
+									Sanchong Dist,Taipei City, Taiwan
+								</a>
+							</li>
+							<li>
+								<a href="tel:0975977286" target="_blank">
+									<i class="fas fa-phone"></i>
+									0975977286
+								</a>
+							</li>
+							<li>
+								<a href="mailto:yaj55ushydna@gmail.com" target="_blank">
+									<i class="fas fa-envelope"></i>
+									yaj55ushydna@gmail.com
+								</a>
+							</li>
+
+						</ul>
+					</div>
 				</div>
 			</div>
-
-
-
 		</div>
 	</footer>
 

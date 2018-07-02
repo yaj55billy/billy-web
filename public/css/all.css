@@ -7286,7 +7286,9 @@ a.text-dark:hover, a.text-dark:focus {
           box-sizing: border-box; }
 
 ul, ol, li {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
 
 .clearfix:after {
   display: block;
@@ -7340,7 +7342,9 @@ h3 {
 /* work-card 作品title*/
 h4 {
   font-size: 18px;
-  font-weight: bolder; }
+  font-weight: bolder;
+  color: #383838;
+  margin: 10px 0 5px; }
 
 p {
   font-size: 15px; }
@@ -7457,9 +7461,43 @@ header {
 /* header END ------------------------------- */
 /* footer ------------------------------- */
 #contact {
-  background-color: #6d7a83;
-  padding: 40px 0;
-  text-align: center; }
+  background-color: #f8f8f8;
+  padding: 40px 0; }
+
+.footer-content {
+  width: 65%;
+  margin: 0 auto; }
+  .footer-content .contact-logo {
+    text-align: center; }
+  .footer-content .contact-logo a {
+    color: #383838; }
+  .footer-content .contact-link {
+    text-align: center; }
+  .footer-content .contact-link li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    margin: 2px 5px; }
+    .footer-content .contact-link li a {
+      color: #383838;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .footer-content .contact-link li a:hover {
+        color: #71cfe9; }
+  .footer-content .contact-info li {
+    margin-bottom: 5px; }
+    .footer-content .contact-info li a {
+      color: #383838;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .footer-content .contact-info li a:hover {
+        color: #71cfe9; }
+    .footer-content .contact-info li .fas {
+      margin-right: 5px; }
+  .footer-content .contact-info li:nth-child(1) .fas {
+    margin-left: 3px; }
 
 /* footer END ------------------------------- */
 /* layout 共用 END */
@@ -7487,11 +7525,13 @@ header {
   width: 65%;
   margin: 0 auto; }
   .skill-content .skill-list {
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
   .skill-content .skill-list h3 span {
+    display: block;
     font-size: 14px;
     font-style: italic;
-    color: #58798c; }
+    color: #58798c;
+    margin-top: 5px; }
 
 .progress {
   width: 100%;
@@ -7509,34 +7549,61 @@ header {
     top: 0; }
 
 /* work */
+.tab-header {
+  margin-bottom: 25px; }
+  .tab-header .tab-btn {
+    width: 85px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #282D30;
+    background-color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    overflow: hidden; }
+    .tab-header .tab-btn:after {
+      content: '';
+      width: 100%;
+      margin: 0 auto;
+      position: absolute;
+      left: -85px;
+      bottom: 0px;
+      border-bottom: solid 2px #a4adb3;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .tab-header .tab-btn:hover, .tab-header .tab-btn.active {
+      color: #a4adb3; }
+    .tab-header .tab-btn:hover:after, .tab-header .tab-btn.active:after {
+      left: 0px; }
+
 .work-card {
   margin-bottom: 30px; }
+  .work-card .work-list-img {
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: 0 10px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .work-card .work-list-img:hover {
+      opacity: 0.8; }
+  .work-card .work-use {
+    padding: 0 8px; }
+    .work-card .work-use .tag {
+      color: #58798c;
+      padding: 4px;
+      font-size: 14px;
+      font-style: italic; }
 
-.work-list-img {
-  border: solid 1px #ccc;
-  border-radius: 8px;
-  padding: 0 10px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-
-.work-list-img:hover {
-  opacity: 0.8; }
-
-.work-card p {
-  color: #58798c;
-  font-size: 16px;
-  margin: 5px 0 7px; }
-
-.work-use {
-  padding: 0 8px;
-  height: 50px; }
-
-.work-use .tag {
-  color: #58798c;
-  padding: 4px;
-  font-size: 14px;
-  font-style: italic; }
+.tab-content#privately {
+  display: none; }
 
 /* index END ------------------------------- */
 

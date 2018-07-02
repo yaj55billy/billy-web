@@ -38,12 +38,14 @@
     width: 65%;
     margin: 0 auto;
     .skill-list {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .skill-list h3 span{    
+        display: block;
         font-size: 14px;
         font-style: italic;
         color: $font-ita;
+        margin-top: 5px;
     }
 }
 
@@ -68,38 +70,79 @@
 
 
 /* work */
+
+// tab-btn
+.tab-header{
+    margin-bottom: 25px;
+
+    .tab-btn{
+        width: 85px;
+        display: inline-block;
+        vertical-align: middle;
+        color:  $dark-gray;
+        background-color: #fff;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 6px 12px;
+        margin-right: 10px;
+        position: relative; 
+        cursor: pointer;
+        transition: all 0.3s;
+        overflow: hidden;
+    
+        &:after{
+            content: '';
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+            left: -85px;
+            bottom: 0px;
+            border-bottom: solid 2px lighten($dark-gray, 50%);
+            transition: all 0.3s;
+        }
+
+        &:hover,&.active{
+            color: lighten($dark-gray, 50%);
+        }
+    
+        &:hover:after,&.active:after{
+            left: 0px;
+        }
+
+    }    
+}
+
+
 .work-card{
     margin-bottom: 30px;
+    .work-list-img{
+        border: solid 1px #ccc;
+        border-radius: 8px;
+        padding: 0 10px;
+        transition: all 0.3s;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    
+    .work-use{
+        padding: 0 8px;
+        .tag{
+            color: #58798c;
+            padding: 4px;
+            font-size: 14px;
+            font-style:italic;
+        }
+    }
+
 }
 
-.work-list-img{
-    border: solid 1px #ccc;
-    border-radius: 8px;
-    padding: 0 10px;
-    transition: all 0.3s;
+.tab-content#privately{
+    display: none;
 }
 
-.work-list-img:hover{
-    opacity: 0.8;
-}
 
-.work-card p{
-    color: #58798c;
-    font-size: 16px;
-    margin: 5px 0 7px;
-}
 
-.work-use{
-    padding: 0 8px;
-    height: 50px;
-}
-
-.work-use .tag{
-    color: #58798c;
-    padding: 4px;
-    font-size: 14px;
-    font-style:italic;
-}
 
 /* index END ------------------------------- */
 
