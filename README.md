@@ -1,6 +1,6 @@
-# 慣用檔案
+# 個人網站
 
-尚在建置~ 
+網址: https://yaj55billy.github.io/billy-web/public/
 
 
 
