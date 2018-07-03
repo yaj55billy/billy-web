@@ -137,28 +137,27 @@ $red: #f37374;
 
 
 
-
 // rwd
 @mixin desk(){
-    @media (min-width:1200px) {
+    @media (max-width:1201px) {
         @content
     }
 };
 
 @mixin l-pad(){
-    @media (min-width:992px) {
+    @media (max-width:991px) {
         @content
     }
 };
 
 @mixin s-pad(){
-    @media (min-width:768px) {
+    @media (max-width:767px) {
         @content
     }
 };
 
 @mixin phone(){
-    @media (min-width:500px) {
+    @media (max-width:575px) {
         @content
     }
 };

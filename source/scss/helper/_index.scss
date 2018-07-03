@@ -21,11 +21,33 @@
         margin-bottom: 10px;
     }
 
-    .about-pic img{
-        width: 250px;
-        height: 250px;
-        border-radius: 99em;
-        border: solid 1px $dark-gray;
+    .about-pic{
+        width: 100%;
+        text-align: center;
+        @include s-pad(){
+            margin-bottom: 15px;
+        }
+        @include phone(){
+            margin-bottom: 15px;
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 99em;
+            border: solid 1px $dark-gray;
+            @include l-pad(){
+                width: 200px;
+                height: 200px;
+            }
+            @include s-pad(){
+                width: 250px;
+                height: 250px;
+            }
+            @include phone(){
+                width: 250px;
+                height: 250px;
+            }
+        }
     }
 }
 
@@ -37,6 +59,16 @@
 .skill-content{
     width: 65%;
     margin: 0 auto;
+    @include l-pad(){
+        width: 100%;
+    }
+    @include s-pad(){
+        width: 100%;
+    }
+    @include phone(){
+        width: 90%;
+    }
+
     .skill-list {
         margin-bottom: 20px;
     }
@@ -44,9 +76,11 @@
         display: block;
         font-size: 14px;
         font-style: italic;
+        line-height: 1.4;
         color: $font-ita;
         margin-top: 5px;
     }
+    
 }
 
 .progress {

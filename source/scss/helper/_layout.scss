@@ -79,6 +79,15 @@ h2.logo{
 
 .section{
     padding: 85px 0;
+    @include l-pad(){
+        padding: 85px 0;
+    }
+    @include s-pad(){
+        padding: 60px 0;
+    }
+    @include phone(){
+        padding: 40px 0;
+    }
 }
 
 h3{
@@ -221,6 +230,15 @@ header{
 .footer-content{
     width: 65%;
     margin: 0 auto;
+    @include l-pad(){
+        width: 100%;
+    }
+    @include s-pad(){
+        width: 100%;
+    }
+    @include phone(){
+        width: 90%;
+    }
     .contact-logo {
         text-align: center;
     }
@@ -229,6 +247,9 @@ header{
     }
     .contact-link{
         text-align: center;
+        @include phone(){
+            margin-bottom: 15px;
+        }
     }
     .contact-link li{
         display: inline-block;
