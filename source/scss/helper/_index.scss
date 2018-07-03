@@ -77,8 +77,18 @@
         font-size: 14px;
         font-style: italic;
         line-height: 1.4;
+        letter-spacing: 1px;
         color: $font-ita;
         margin-top: 5px;
+        @include l-pad(){
+            
+        }
+        @include s-pad(){
+            
+        }
+        @include phone(){
+            font-size: 13px;
+        }
     }
     
 }

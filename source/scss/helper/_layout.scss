@@ -53,6 +53,15 @@ h2{
     font-weight: bold;
     color: $black;
     letter-spacing: 1px;
+    @include l-pad(){
+        
+    }
+    @include s-pad(){
+        
+    }
+    @include phone(){
+        font-size: $font-h2 * 0.8;
+    }
 }
 
 h2.title{
@@ -67,9 +76,19 @@ h2.title:after{
     height: 3px;
     margin: 5px auto 40px;
     background-color: $black;
+    @include l-pad(){
+        
+    }
+    @include s-pad(){
+        
+    }
+    @include phone(){
+        margin: 5px auto 30px;
+    }
 } 
 
 h2.logo{
+    font-size: $font-h2;
     padding-top: 15px;
 }
 
@@ -97,6 +116,15 @@ h3{
     margin: 0;
     margin-bottom: 5px;
     color: $dark-gray;
+    @include l-pad(){
+        
+    }
+    @include s-pad(){
+        
+    }
+    @include phone(){
+        font-size: $font-h3 * 0.8;
+    }
 }
 
 /* work-card 作品title*/
@@ -105,10 +133,29 @@ h4{
     font-weight: bolder;
     color: $black;
     margin: 10px 0 5px;
+
+    @include l-pad(){
+        
+    }
+    @include s-pad(){
+        
+    }
+    @include phone(){
+        font-size: 18px * 0.8;
+    }
 }
 
 p{
     font-size: $font-base;
+    @include l-pad(){
+        
+    }
+    @include s-pad(){
+        
+    }
+    @include phone(){
+        font-size: $font-base * 0.9;
+    }
 }
 
 
@@ -120,7 +167,15 @@ header{
     width: 100%;
     height: 100vh;
     background: $bg-1;
-
+    // @include l-pad(){
+    //     height: 100vh;
+    // }
+    // @include s-pad(){
+    //     height: 100vh;
+    // }
+    // @include phone(){
+    //     height: 100vh;
+    // }
 
     .container{
         position: relative;
@@ -135,6 +190,17 @@ header{
         right: 15px;
         margin: auto;
         transform: translateY(-50%);
+        @include l-pad(){
+            width: 90%;
+        }
+        @include s-pad(){
+            width: 90%;
+        }
+        @include phone(){
+            width: 90%;
+        }
+
+
         .greet-bg-top{
             border: solid 4px $banner;
             border-top-left-radius: 15px;
@@ -225,6 +291,18 @@ header{
     background-color: $bg-1;
     padding: 40px 0;
     // text-align: center;
+
+    .title{
+        @include l-pad(){
+            
+        }
+        @include s-pad(){
+            
+        }
+        @include phone(){
+            display: none;
+        }
+    }
 }
 
 .footer-content{

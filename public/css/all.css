@@ -445,8 +445,8 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -464,8 +464,8 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -475,8 +475,8 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -20px;
+  margin-left: -20px; }
 
 .no-gutters {
   margin-right: 0;
@@ -495,8 +495,8 @@ pre {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -3687,15 +3687,15 @@ input[type="button"].btn-block {
       -ms-flex-direction: column;
           flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
   @media (min-width: 576px) {
     .card-deck {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
               flex-flow: row wrap;
-      margin-right: -15px;
-      margin-left: -15px; }
+      margin-right: -20px;
+      margin-left: -20px; }
       .card-deck .card {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3707,9 +3707,9 @@ input[type="button"].btn-block {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-right: 15px;
+        margin-right: 20px;
         margin-bottom: 0;
-        margin-left: 15px; } }
+        margin-left: 20px; } }
 
 .card-group {
   display: -webkit-box;
@@ -3720,7 +3720,7 @@ input[type="button"].btn-block {
       -ms-flex-direction: column;
           flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
   @media (min-width: 576px) {
     .card-group {
       -webkit-box-orient: horizontal;
@@ -7309,6 +7309,9 @@ h2 {
   font-weight: bold;
   color: #383838;
   letter-spacing: 1px; }
+  @media (max-width: 575px) {
+    h2 {
+      font-size: 25.6px; } }
 
 h2.title {
   width: 100%;
@@ -7321,8 +7324,12 @@ h2.title:after {
   height: 3px;
   margin: 5px auto 40px;
   background-color: #383838; }
+  @media (max-width: 575px) {
+    h2.title:after {
+      margin: 5px auto 30px; } }
 
 h2.logo {
+  font-size: 32px;
   padding-top: 15px; }
 
 .main {
@@ -7347,6 +7354,9 @@ h3 {
   margin: 0;
   margin-bottom: 5px;
   color: #282D30; }
+  @media (max-width: 575px) {
+    h3 {
+      font-size: 19.2px; } }
 
 /* work-card 作品title*/
 h4 {
@@ -7354,9 +7364,15 @@ h4 {
   font-weight: bolder;
   color: #383838;
   margin: 10px 0 5px; }
+  @media (max-width: 575px) {
+    h4 {
+      font-size: 14.4px; } }
 
 p {
   font-size: 15px; }
+  @media (max-width: 575px) {
+    p {
+      font-size: 13.5px; } }
 
 /* header------------------------------- */
 header {
@@ -7376,6 +7392,15 @@ header {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
+    @media (max-width: 991px) {
+      header .greet-bg {
+        width: 90%; } }
+    @media (max-width: 767px) {
+      header .greet-bg {
+        width: 90%; } }
+    @media (max-width: 575px) {
+      header .greet-bg {
+        width: 90%; } }
     header .greet-bg .greet-bg-top {
       border: solid 4px #6d7a83;
       border-top-left-radius: 15px;
@@ -7472,6 +7497,9 @@ header {
 #contact {
   background-color: #f8f8f8;
   padding: 40px 0; }
+  @media (max-width: 575px) {
+    #contact .title {
+      display: none; } }
 
 .footer-content {
   width: 65%;
@@ -7582,8 +7610,12 @@ header {
     font-size: 14px;
     font-style: italic;
     line-height: 1.4;
+    letter-spacing: 1px;
     color: #58798c;
     margin-top: 5px; }
+    @media (max-width: 575px) {
+      .skill-content .skill-list h3 span {
+        font-size: 13px; } }
 
 .progress {
   width: 100%;
