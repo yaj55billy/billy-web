@@ -7379,6 +7379,15 @@ header {
   width: 100%;
   height: 100vh;
   background: #f8f8f8; }
+  @media (max-width: 991px) {
+    header {
+      height: auto; } }
+  @media (max-width: 767px) {
+    header {
+      height: auto; } }
+  @media (max-width: 575px) {
+    header {
+      height: auto; } }
   header .container {
     position: relative;
     height: 100%; }
@@ -7394,13 +7403,37 @@ header {
             transform: translateY(-50%); }
     @media (max-width: 991px) {
       header .greet-bg {
-        width: 90%; } }
+        width: 90%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+        padding: 50px 0 100px; } }
     @media (max-width: 767px) {
       header .greet-bg {
-        width: 90%; } }
+        width: 90%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+        padding: 50px 0 100px; } }
     @media (max-width: 575px) {
       header .greet-bg {
-        width: 90%; } }
+        width: 90%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+        padding: 50px 0 100px; } }
     header .greet-bg .greet-bg-top {
       border: solid 4px #6d7a83;
       border-top-left-radius: 15px;
@@ -7429,6 +7462,15 @@ header {
       border: solid 4px #6d7a83;
       border-top: 0;
       height: 300px; }
+      @media (max-width: 991px) {
+        header .greet-bg .greet-bg-bottom {
+          height: auto; } }
+      @media (max-width: 767px) {
+        header .greet-bg .greet-bg-bottom {
+          height: auto; } }
+      @media (max-width: 575px) {
+        header .greet-bg .greet-bg-bottom {
+          height: auto; } }
     header .greet-bg .bottom-text {
       position: absolute;
       top: 50%;
@@ -7440,13 +7482,71 @@ header {
       transform: translateY(-50%);
       text-align: center;
       line-height: 1.5; }
+      @media (max-width: 991px) {
+        header .greet-bg .bottom-text {
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+                  transform: translateY(0);
+          padding: 40px 0; } }
+      @media (max-width: 767px) {
+        header .greet-bg .bottom-text {
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+                  transform: translateY(0);
+          padding: 40px 0; } }
+      @media (max-width: 575px) {
+        header .greet-bg .bottom-text {
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+                  transform: translateY(0);
+          padding: 40px 0;
+          line-height: 1.2; } }
     header .greet-bg .greet-gear {
       position: absolute;
       left: 12px;
       bottom: 12px; }
+      @media (max-width: 991px) {
+        header .greet-bg .greet-gear {
+          position: relative;
+          left: 0;
+          bottom: 0;
+          -webkit-transform: translateY(-50px) translateX(12px);
+              -ms-transform: translateY(-50px) translateX(12px);
+                  transform: translateY(-50px) translateX(12px); } }
+      @media (max-width: 767px) {
+        header .greet-bg .greet-gear {
+          position: relative;
+          left: 0;
+          bottom: 0;
+          -webkit-transform: translateY(-50px) translateX(12px);
+              -ms-transform: translateY(-50px) translateX(12px);
+                  transform: translateY(-50px) translateX(12px); } }
+      @media (max-width: 575px) {
+        header .greet-bg .greet-gear {
+          position: relative;
+          left: 0;
+          bottom: 0;
+          -webkit-transform: translateY(-50px) translateX(12px);
+              -ms-transform: translateY(-50px) translateX(12px);
+                  transform: translateY(-50px) translateX(12px); } }
       header .greet-bg .greet-gear .fa-cogs {
         font-size: 40px;
         color: #6d7a83; }
+        @media (max-width: 575px) {
+          header .greet-bg .greet-gear .fa-cogs {
+            font-size: 32px; } }
   header .arrow {
     width: 100%;
     text-align: center;

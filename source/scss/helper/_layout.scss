@@ -167,15 +167,15 @@ header{
     width: 100%;
     height: 100vh;
     background: $bg-1;
-    // @include l-pad(){
-    //     height: 100vh;
-    // }
-    // @include s-pad(){
-    //     height: 100vh;
-    // }
-    // @include phone(){
-    //     height: 100vh;
-    // }
+    @include l-pad(){
+        height: auto;
+    }
+    @include s-pad(){
+        height: auto;
+    }
+    @include phone(){
+        height: auto;
+    }
 
     .container{
         position: relative;
@@ -192,12 +192,30 @@ header{
         transform: translateY(-50%);
         @include l-pad(){
             width: 90%;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(0);
+            padding: 50px 0 100px;
         }
         @include s-pad(){
             width: 90%;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(0);
+            padding: 50px 0 100px;
         }
         @include phone(){
             width: 90%;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(0);
+            padding: 50px 0 100px;
         }
 
 
@@ -237,11 +255,47 @@ header{
             border: solid 4px $banner;
             border-top: 0;
             height: 300px;
+            @include l-pad(){
+                height: auto;
+            }
+            @include s-pad(){
+                height: auto;
+            }
+            @include phone(){
+                height: auto;
+            }
+
         }
         .bottom-text{
             @include centerVH();
             text-align: center;
             line-height: 1.5;
+
+            @include l-pad(){
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                transform: translateY(0);
+                padding: 40px 0;
+            }
+            @include s-pad(){
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                transform: translateY(0);
+                padding: 40px 0;
+            }
+            @include phone(){
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                transform: translateY(0);
+                padding: 40px 0;
+                line-height: 1.2;
+            }
         }
 
         .greet-gear{
@@ -249,9 +303,31 @@ header{
             left: 12px;
             bottom: 12px;
 
+            @include l-pad(){
+                position: relative;
+                left: 0;
+                bottom: 0;
+                transform: translateY(-50px) translateX(12px);
+            }
+            @include s-pad(){
+                position: relative;
+                left: 0;
+                bottom: 0;
+                transform: translateY(-50px) translateX(12px);
+            }
+            @include phone(){
+                position: relative;
+                left: 0;
+                bottom: 0;
+                transform: translateY(-50px) translateX(12px);
+            }
             .fa-cogs{
                 font-size: 40px;
                 color: $banner;
+
+                @include phone(){
+                    font-size: 32px;
+                }
             }
         }
     }
